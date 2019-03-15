@@ -1,6 +1,6 @@
 <template lang="pug">
 .node(:class="[selected(), node.name] | kebab")
-  .title {{node.name}} PEPE
+  .title {{node.name + 'PEPE'}}
 
   // Outputs
   .output(v-for='output in outputs()' :key="output.key")
