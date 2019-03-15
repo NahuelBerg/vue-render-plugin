@@ -16,7 +16,7 @@
   // Inputs
   .input(v-for='input in inputs()' :key="input.key")
     Socket(v-socket:input="input", type="input", :socket="input.socket")
-    .input-title(v-show='!input.showControl()') {{input.name}}
+    .input-title(v-show='!input.showControl()') {{input.name}} {{sarlanga}}
     .input-control(
       v-show='input.showControl()'
       v-control="input.control"
